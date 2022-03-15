@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+  /* background-color: #2b5876; */
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* start media  */
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end main styles */
+
+/* NAV BAR PROJECT 
+==============================================  */
+
+/* main styles */
+.sc-7 {
+  height: 100vh;
+  position: relative;
+}
+.nav-bc {
+  background: #fff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  position: relative;
+}
+
+/* logo */
+.nav-header h4 {
+  font-weight: 200;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: hsl(209deg 58% 32%);
+  font-family: cursive, "sans-serif";
+}
+.nav-header span {
+  color: hsl(205, 63%, 48%);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center2 {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem; /* Tiems to 8px */
+  }
+
+  .links {
+    display: flex;
+    height: auto;
+  }
+  ul.links li a {
+    color: hsl(209, 34%, 30%);
+    letter-spacing: 3px;
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+    color: #49a6e9;
+    cursor: pointer;
+  }
+}
+@media (max-width: 800px) {
+  /* ul.links {
+      display: none;
+    } */
+  ul.links li a {
+    margin: auto;
+    color: hsl(209, 34%, 30%);
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .nav-toggle {
+    background: none;
+    border: none;
+    color: #49a6e9;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    display: block;
+  }
+  .nav-toggle:hover {
+    color: hsl(205, 86%, 17%);
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+  .links a:hover {
+    background: hsl(205, 86%, 81%);
+    color: #49a6e9;
+    padding-left: 1.5rem;
+  }
+  .show-links {
+    height: 9rem;
+  }
+}
+.nav-bc-2 {
+  background-color: #f5f5f5;
+  height: 94vh;
+  width: 100%;
+}
+.main-heading h5 {
+  font-weight: 200;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: hsl(209deg 58% 32%);
+  font-family: "sans-serif";
+}
+.main-heading span {
+  color: hsl(205, 63%, 48%);
+}
+.close-btn {
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: hsl(360, 67%, 44%);
+}
+.close-btn:hover {
+  color: hsl(360, 71%, 66%);
+  transform: rotate(360deg);
+}
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.project-lest a {
+  display: block;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  color: hsl(210, 22%, 49%);
+  transition: all 0.3s ease;
+}
+.nav-bc-2 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 1.5rem 2rem 8rem;
+  color: #222;
+}
+.project-lest a:hover {
+  background: hsl(205, 86%, 81%);
+  color: #49a6e9;
+  padding-left: 1.75rem;
+}
+.slider p {
+  color: #49a6e9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slider p:hover {
+  color: hsl(205, 86%, 17%);
+}
+.slider {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 94vh;
+  background: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  transition: all 0.3s ease;
+  transform: translate(-100%);
+  border-top: 1px solid rgb(0 0 0 / 48%);
+}
+@media (min-width: 678px) {
+  .slider {
+    width: 400px;
+  }
+}
+@media (max-width: 550px) {
+  .slider {
+    height: 77vh;
+  }
+}
+.show-sidebar {
+  transform: translate(0);
+}
